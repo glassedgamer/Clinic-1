@@ -21,4 +21,11 @@ public class SpawnPoint : MonoBehaviour
         randSpawnDelay = Random.Range(spawnDelayMin, spawnDelayMax);
         print(randSpawnDelay);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawSphere(transform.position, 0.5f);
+    }
 }
