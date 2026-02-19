@@ -7,6 +7,7 @@ TagManager:
   - MovingPlatform
   - GrappleSurface
   - SwingBar
+  - Enemy
   layers:
   - Default
   - TransparentFX
