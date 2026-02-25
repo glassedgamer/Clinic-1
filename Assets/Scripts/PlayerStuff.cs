@@ -30,7 +30,7 @@ public class PlayerStuff : MonoBehaviour
 
         if(health <= 0)
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Main Menu");
         }
     }
 
