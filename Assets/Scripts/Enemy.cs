@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject == player)
         {
+            collision.gameObject.GetComponent<PlayerStuff>().TakeAwayHealth();
             Destroy(gameObject);
         }
     }
