@@ -30,6 +30,8 @@ public class BulletMove : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
+            player.GetComponent<PlayerStuff>().AddScore();
+
             Destroy(collision.gameObject);
         }
 
